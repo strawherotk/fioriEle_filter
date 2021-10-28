@@ -1,0 +1,19 @@
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+    <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/UI.xml">
+        <edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata/sap/ZNW_SD_PRICE_MASTER_SRV/$metadata">
+        <edmx:Include Namespace="ZNW_SD_PRICE_MASTER_SRV"/>
+    </edmx:Reference>
+    <edmx:DataServices>
+        <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="com.hirose.sd.price">
+            <Annotations Target="ZNW_SD_PRICE_MASTER_SRV.PriceMaster">
+                <Annotation Term="UI.SelectionFields">
+                    <Collection>
+                        <PropertyPath>CCustomer</PropertyPath>
+                    </Collection>
+                </Annotation>
+            </Annotations>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
