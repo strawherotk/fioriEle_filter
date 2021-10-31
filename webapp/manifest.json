@@ -96,7 +96,6 @@
                 "type": "sap.ui.model.resource.ResourceModel",
                 "uri": "i18n/ObjectPage/PriceMasterSet/i18n.properties"
             },
-            
             "": {
                 "dataSource": "mainService",
                 "preload": true,
@@ -111,7 +110,22 @@
             }
         },
         "extends": {
-            "extensions": {}
+            "extensions": {
+                "sap.ui.controllerExtensions": {
+                    "sap.suite.ui.generic.template.ListReport.view.ListReport": {
+                        "controllerName": "com.hirose.sd.price.pricecondreport.ext.controller.ListReportExt"
+                    }
+                },
+                "sap.ui.viewExtensions": {
+                    "sap.suite.ui.generic.template.ListReport.view.ListReport": {
+                        "SmartFilterBarControlConfigurationExtension|PriceMasterSet": {
+                            "className": "sap.ui.core.Fragment",
+                            "fragmentName": "com.hirose.sd.price.pricecondreport.ext.fragments.customFilters",
+                            "type": "XML"
+                        }
+                    }
+                }
+            }
         },
         "contentDensities": {
             "compact": true,
