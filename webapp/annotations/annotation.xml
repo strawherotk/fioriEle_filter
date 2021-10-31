@@ -11,6 +11,8 @@
                 <Annotation Term="UI.SelectionFields">
                     <Collection>
                         <PropertyPath>CCustomer</PropertyPath>
+                        <PropertyPath>CSalesOrganization</PropertyPath>
+                        <PropertyPath>PSalesOrganization</PropertyPath>
                     </Collection>
                 </Annotation>
             </Annotations>
