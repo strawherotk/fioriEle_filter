@@ -21,3 +21,6 @@ builder:
           description: HRS Price condition master report Deploy
           package: ZHRS_FIORI
           transport: HD1K901878
+        credentials:
+          username: env:HD1_USER
+          password: env:HD1_PASSWORD
