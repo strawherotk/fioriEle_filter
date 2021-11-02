@@ -12,13 +12,13 @@
     ],
     "main": "webapp/index.html",
     "scripts": {
-        "start": "fiori run --open 'test/flpSandbox.html?sap-client=200#pricecondreport-tile'",
-        "start-local": "fiori run --config ./ui5-local.yaml --open 'test/flpSandboxMockServer.html?sap-client=200#pricecondreport-tile'",
-        "start-noflp": "fiori run --open 'index.html?sap-client=200'",
+        "start": "fiori run --open 'test/flpSandbox.html?sap-client=100#pricecondreport-tile'",
+        "start-local": "fiori run --config ./ui5-local.yaml --open 'test/flpSandboxMockServer.html?sap-client=100#pricecondreport-tile'",
+        "start-noflp": "fiori run --open 'index.html?sap-client=100'",
         "build": "ui5 build -a --clean-dest --include-task=generateManifestBundle generateCachebusterInfo",
         "deploy": "npm run build && fiori deploy --config ui5-deploy.yaml && rimraf archive.zip",
         "deploy-config": "fiori add deploy-config",
-        "start-mock": "fiori run --open 'test/flpSandboxMockServer.html?sap-client=200#pricecondreport-tile'",
+        "start-mock": "fiori run --open 'test/flpSandboxMockServer.html?sap-client=100#pricecondreport-tile'",
         "undeploy": "fiori undeploy --config ui5-deploy.yaml",
         "deploy-test": "npm run build && fiori deploy --config ui5-deploy.yaml --testMode true"
     },
