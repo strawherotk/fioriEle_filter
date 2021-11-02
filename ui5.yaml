@@ -11,8 +11,8 @@ server:
       backend:
       - path: /sap
         url: http://sap-dev-005:44302
-        client: '200'
-        destination: HD1
+        client: '100'
+        destination: HD1_100
       ui5:
         path: 
         - /resources

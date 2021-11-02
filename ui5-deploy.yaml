@@ -14,13 +14,13 @@ builder:
       afterTask: generateCachebusterInfo
       configuration:
         target:
-          destination: HD1
+          destination: HD1_100
           url: http://sap-dev-005:44302
         app:
           name: ZIE_PRC_MD_REP
           description: HRS Price condition master report Deploy
           package: ZHRS_FIORI
-          transport: HD1K901878
+          transport: HD1_100K901878
         credentials:
-          username: env:HD1_USER
-          password: env:HD1_PASSWORD
+          username: env:HD1_100_USER
+          password: env:HD1_100_PASSWORD
